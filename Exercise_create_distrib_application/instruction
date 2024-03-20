@@ -1,0 +1,51 @@
+1	Create a new file named ScientificAnalysis.rb. Create the default structure for a ruby application with a header,
+requires statements section, module definitions section, class definitions section,
+ main program section, and a testing code section.
+ Complete the header section by entering a program name, author, and brief description.
+
+2	Create a new module named Analyze. Then add a method named any_results_below_freezing?
+that accepts a hash. The method should set a response to false,
+iterate through the hash parameter, and call the private method result_below _freezing?.
+ If true, change the value of the response ,otherwise use the current value of the response.
+
+Expert Tip: Use the ternary operator to check the result of the method call which would be in this form:
+
+<statement to evaluate > ? <value if true > : <value if false >
+
+3	Create a private method named result_below_freezing?
+which accepts an element from a hash. It then returns true if the value portion is less than zero.
+
+4	Create a class named CollectedData that has researcher_name, date_entered,
+and data properties. It should also use the Analzye method as a mixin.
+
+5	Create a method named Initialize that has a researcher parameter and a date_entered parameter.
+ If the date is not include it should default to DateTime.now.
+ It should also initialize the @data property to a new Hash instance.
+
+6	Create an add method which accepts a value and assigns it to the data instance variable.
+
+7	In the main program section, write a line of code that outputs "Starting program" to the screen.
+
+8	Create a variable named mydata and assign a new instance
+of CollectedData to it using Matt White as the only parameter.
+
+9	Call mydata.add and pass in a hash that has "boiling water" => 100, "frying pan"=> 75, and "pencil" => 20 as the key|value pairs.
+
+10	Call the any_results_below_freezing? method of the CollectedData object
+ using the value of the data property and send the result to the screen.
+
+11	In the requires statement section, ensure that the program
+ can use the "minitest/autorun" module.
+
+12	In the testing code section, write a class named TestCollectedData
+that inherits from MiniTest::Unit::TestCase.
+
+13	Create a setup method which creates an instance of CollectedData
+ with a researcher's name of John Smith. Then call the add method to add this hash:
+
+{"Iceberg1"=>-5, "Deep freeze1" =>-10, "Driveway" => 35}
+14	Create a method named test_below_freezing that asserts a call to the CollectedData
+ instance's any_results_below_freeing? method that will equal true
+  when using the data property.
+
+15	Package the application to be sent to the lead researcher.

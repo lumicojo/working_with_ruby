@@ -1,0 +1,12 @@
+#Range
+
+# require 'set' # this create a class
+# call the constructer to se a class
+# colors1 = Set.new([:red, :green, :blue]) #create a sets
+# # or you called the two set methos
+# #Another way to create sets create an array and calles 2 set
+# colors2 = [:yello, :brown, :red].to_set
+#colors1 | colors2 this combine the 2sets
+#colors1 & colors2 we do an intersection   = red
+#colors1 - colors2     ={:green, :blue}>
+#colors1 ^ colors2   =  {:yello, :brown, :green, :blue}>
